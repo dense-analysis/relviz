@@ -1,0 +1,50 @@
+{
+  "name": "relviz",
+  "version": "0.1.0",
+  "description": "A tool for visualising relationships between people or things easily in a browser. The result of running the script is an easy to deploy static webpage that shows the visualisation.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w0rp/relviz.git"
+  },
+  "keywords": [
+    "graph",
+    "visualization"
+  ],
+  "author": "w0rp <dev@w0rp.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/w0rp/relviz/issues"
+  },
+  "homepage": "https://github.com/w0rp/relviz#readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "graph-to-html": "webpack --mode production",
+    "watch-graph-to-html": "webpack watch --mode development",
+    "excel-to-graph": "ts-node src/excel-to-graph.ts",
+    "lint": "eslint --fix src public webpack.config.js"
+  },
+  "dependencies": {
+    "argparse": "^2.0.1",
+    "exceljs": "^4.3.0",
+    "graphology": "^0.25.1",
+    "graphology-layout-force": "^0.2.4",
+    "sigma": "^2.4.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.4",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/argparse": "^2.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "eslint": "^8.30.0",
+    "eslint_d": "^12.2.1",
+    "eslint-config-standard-with-typescript": "^24.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "ts-node": "^10.9.1"
+  }
+}

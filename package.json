@@ -22,7 +22,7 @@
     "graph-to-html": "webpack --mode production",
     "watch-graph-to-html": "webpack watch --mode development",
     "excel-to-graph": "ts-node src/excel-to-graph.ts",
-    "lint": "eslint --fix src public webpack.config.js"
+    "lint": "eslint --fix src webpack.config.js"
   },
   "dependencies": {
     "argparse": "^2.0.1",

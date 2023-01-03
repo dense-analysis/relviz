@@ -32,6 +32,18 @@ After generating the graph file, build the HTML bundle.
 npm run graph-to-html
 ```
 
+You can open `index.html` in the root of the repository to view the graph in any
+decent browser. If you are happy with the results, you can build the HTML and JS
+for distribution with the following command.
+
+```sh
+npm run pack
+```
+
+A `www` directory will be created with the results, and you can copy and paste
+the contents to any web server such as nginx to make the graph available to the
+public.
+
 ## Development
 
 You can watch for changes and continuously build the graph HTML.

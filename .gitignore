@@ -3,6 +3,7 @@
 
 # Ignore development files.
 /node_modules/
+/www/
 
 # Ignore test .xlsx files.
 *.xlsx

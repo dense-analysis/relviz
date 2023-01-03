@@ -19,10 +19,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --fix src webpack.config.js",
+    "excel-to-graph": "ts-node src/excel-to-graph.ts",
     "graph-to-html": "webpack --mode production",
     "watch-graph-to-html": "webpack watch --mode development",
-    "excel-to-graph": "ts-node src/excel-to-graph.ts",
-    "lint": "eslint --fix src webpack.config.js"
+    "pack": "npm run graph-to-html && mkdir -p www/dist && cp dist/render-graph.js www/dist/ && cp index.html www/ && echo '' && echo 'Graph available to deploy in www/'"
   },
   "dependencies": {
     "argparse": "^2.0.1",

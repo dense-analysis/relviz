@@ -4,6 +4,8 @@ A tool for visualising relationships between people or things easily in a
 browser. The result of running the script is an easy to deploy static webpage
 that shows the visualisation.
 
+![relviz example](https://user-images.githubusercontent.com/3518142/210435085-0342359e-8bae-45be-9012-5b8e2f5b04b9.png)
+
 ## Usage
 
 Make sure `npm` is installed, and run `npm install`.
